@@ -84,9 +84,9 @@
             display-name = "MEDIA";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                &trans                &trans                &trans           &trans                         &trans                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                &trans                &kp C_STOP            &kp C_EJECT      &kp C_REWIND                   &kp C_FAST_FORWARD      &trans  &trans
-&trans  &trans  &trans  &trans  &trans                &trans                &trans                &trans           &trans                         &trans                  &trans  &trans
-                        &trans  &kp C_PLAY_PAUSE      &kp C_PREVIOUS        &kp C_NEXT           &kp C_MUTE         &kp C_VOLUME_DOWN
+&trans  &trans  &trans  &trans  &trans                &trans                &trans                &kp C_MUTE       &kp C_VOLUME_DOWN              &kp C_VOLUME_UP          &trans  &trans
+&trans  &trans  &trans  &trans  &trans                &trans                &trans                &kp C_PREVIOUS   &kp C_PLAY_PAUSE                &kp C_STOP               &kp C_NEXT &trans
+                        &trans  &trans                &trans                &trans                &trans                &trans                &trans
             >;
         };
 

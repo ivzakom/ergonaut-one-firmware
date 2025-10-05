@@ -16,7 +16,7 @@
 
 &macro_null {
     bindings = <
-        &text, "NULL", &kp, , SPC
+        &text, "NULL", &kp, , , SPC
     >;
 };
 
@@ -24,14 +24,14 @@
 
 &macro_not_equal {
     bindings = <
-        &text, "<>", , >;
+        &text, "<>", , , >;
 };
 
 // Macro для Ё/Ё (hold E)
 
 &macro_e {
     bindings = <
-        &text, "Ё", , >;
+        &text, "Ё", , , >;
 };
 
 &macro_e_upper {
@@ -40,6 +40,7 @@
         &text,
         "Ё",
         ,
+        ,
         // Или "Ё" uppercase, еслaи нужно &kp LSHFT &text "Ё",
         >;
 };
@@ -47,7 +48,7 @@
 // Tap-dance для <>: tap <, double-tap <>, hold macro <>
 
 &td_lt {
-    tap-action = &kp, , LT;
+    tap-action = &kp, , , LT;
 
     taps = <2>;
     double-tap-action = &macro_not_equal;
@@ -91,10 +92,10 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&kp HOME         &kp PG_UP  &kp END  &kp PG_DN  &kp PSCRN  &kp RALT    &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_N7  &mt LGUI KP_N8  &mt LGUI KP_N9  &kp KP_MINUS
-&mt LCTRL MINUS  &trans     &trans   &trans     &kp CAPS   &kp KP_NUM  &trans        &kp KP_PLUS      &kp KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &mt RCTRL KP_DOT
-&kp LALT         &trans     &trans   &trans     &trans     &trans      &trans        &trans           &kp KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &kp RALT
-                                     &trans     &trans     &trans      &trans        &trans           &trans
+&trans           &kp PRINTSCREEN  &kp PG_UP      &kp HOME  &kp END   &kp RALT    &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_N7  &mt LGUI KP_N8  &mt LGUI KP_N9  &kp KP_MINUS
+&mt LCTRL MINUS  &trans           &kp LG(PG_DN)  &trans    &kp CAPS  &kp KP_NUM  &trans        &kp KP_PLUS      &kp KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &mt RCTRL KP_DOT
+&kp LALT         &trans           &trans         &trans    &trans    &trans      &trans        &trans           &kp KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &kp RALT
+                                                 &trans    &trans    &trans      &trans        &trans           &trans
             >;
         };
 

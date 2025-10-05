@@ -36,7 +36,7 @@
 
 &macro_e_upper {
     bindings = <
-        &text "Ё"  // Или "Ё" uppercase, если нужно &kp LSHFT &text "Ё"
+        &text "Ё"  // Или "Ё" uppercase, еслaи нужно &kp LSHFT &text "Ё"
     >;
 };
 

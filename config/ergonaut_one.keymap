@@ -13,22 +13,25 @@
 &mt { quick-tap-ms = <200>; };
 
 // Макрос для NULL (приоритет 1, часто в запросах 1С)
-
-&macro_null { bindings = <
-        &text "NULL", &kp, SPC
-    >; };
+&macro_null {
+    bindings = <
+        &text "NULL"
+        &kp SPC
+    >;
+};
 
 // Макрос для <> (не равно, приоритет 1, авто-вставка пары)
-
-&macro_not_equal { bindings = <
-        &text, "<>", >; };
+&macro_not_equal {
+    bindings = <
+        &text "<>"
+    >;
+};
 
 &behavior_send_key {
     bindings = <
         &kp LT  // Tap: <
         &macro_not_equal  // Hold или double-tap: <>
     >;
-
     tap-action = &macro_null;
     hold-action = &macro_not_equal;
     hold-trigger-key-positions = <0 0 0 0>;  // Простая реализация; доработай для tap-dance если нужно
@@ -81,9 +84,9 @@
             display-name = "MEDIA";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                &trans                &trans                &trans           &trans                         &trans                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                &trans                &kp MEDIA_STOP        &kp MEDIA_EJECT  &kp MEDIA_REWIND               &kp MEDIA_FAST_FORWARD  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                &trans                &kp C_STOP            &kp C_EJECT      &kp C_REWIND                   &kp C_FAST_FORWARD      &trans  &trans
 &trans  &trans  &trans  &trans  &trans                &trans                &trans                &trans           &trans                         &trans                  &trans  &trans
-                        &trans  &kp MEDIA_PLAY_PAUSE  &kp MEDIA_PREV_TRACK  &kp MEDIA_NEXT_TRACK  &kp MEDIA_MUTE   &kp CONSUMER_VOLUME_DECREMENT
+                        &trans  &kp C_PLAY_PAUSE      &kp C_PREVIOUS        &kp C_NEXT           &kp C_MUTE         &kp C_VOLUME_DOWN
             >;
         };
 

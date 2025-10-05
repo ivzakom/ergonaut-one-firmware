@@ -71,8 +71,8 @@
             display-name = "NUM";
             bindings = <
 &mt LGUI N1      &mt LGUI N2  &mt LGUI N3  &mt LGUI N4  &mt LGUI N5  &trans    &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_N7  &mt LGUI KP_N8  &mt LGUI KP_N9  &kp KP_MINUS
-&mt LCTRL MINUS  &trans       &trans       &kp LEFT     &kp UP       &kp DOWN  &trans        &kp KP_PLUS      &kp KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &mt RCTRL KP_DOT
-&kp LALT         &trans       &trans       &kp RIGHT    &trans       &trans    &trans        &trans           &kp KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &kp RALT
+&mt LCTRL MINUS  &trans       &trans       &kp UP     &trans       &trans  &trans        &kp KP_PLUS      &kp KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &mt RCTRL KP_DOT
+&kp LALT         &trans       &kp LEFT       &kp DOWN    &kp RIGHT       &trans    &trans        &trans           &kp KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &kp RALT
                                            &trans       &trans       &trans    &trans        &trans           &trans
             >;
         };

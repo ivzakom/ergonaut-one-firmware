@@ -64,8 +64,8 @@
             display-name = "SYM";
             bindings = <
 &mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&mt LCTRL PLUS  &trans    &kp PIPE &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR   &kp HASH  &kp AT     &kp DLLR  &kp PRCNT &mt RCTRL CARET
-&mt LALT EQUAL  &trans    &kp LT   &kp GT    &kp QMARK &kp N1     &kp N2     &kp N3    &kp N4     &kp N5    &kp N6    &kp RALT
+&mt LCTRL PLUS  &kp LCUR  &kp LPAR &kp RPAR  &kp RCUR  &trans     &kp HASH   &kp AMPS  &kp STAR  &kp PIPE  &kp CARET &mt RCTRL PLUS
+&mt LALT EQUAL  &trans    &trans  &kp LT    &kp GT    &kp QMARK  &trans     &trans    &trans    &trans    &trans    &kp RALT
                                   &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
@@ -73,9 +73,9 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&mt LGUI KP_NUM  &trans       &mt LGUI KP_N7  &mt LGUI KP_N8  &mt LGUI KP_N9  &kp KP_MINUS  &trans       &trans      &trans      &trans      &trans      &trans
-&mt LCTRL trans  &trans       &mt LGUI KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &kp KP_PLUS   &trans       &trans      &trans      &kp UP      &kp KP_N0   &mt RCTRL KP_DOT
-&kp LALT         &trans       &mt LGUI KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &trans        &trans       &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &kp RALT
+&mt LGUI KP_NUM  &trans       &trans       &trans       &trans       &trans       &mt LGUI KP_N7  &mt LGUI KP_N8  &mt LGUI KP_N9  &kp KP_MINUS  &trans      &trans
+&mt LCTRL trans  &trans       &trans       &kp LEFT     &kp UP       &kp DOWN     &mt LGUI KP_N4  &mt LGUI KP_N5  &mt LGUI KP_N6  &kp KP_PLUS   &kp KP_N0   &mt RCTRL KP_DOT
+&kp LALT         &trans       &trans       &kp RIGHT    &trans       &trans       &mt LGUI KP_N1  &mt LGUI KP_N2  &mt LGUI KP_N3  &trans        &trans      &kp RALT
                                              &trans     &trans     &trans        &trans        &trans     &trans
             >;
         };
@@ -84,9 +84,9 @@
             display-name = "MEDIA";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp MPLY  &kp MPRV  &kp MNXT  &kp MUTE  &kp VOL_DN  &kp VOL_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &kp MSTOP &kp MEJCT &kp REW &kp FAST  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans &trans    &trans  &trans
+                        &trans  &kp MPLY  &kp MPRV  &kp MNXT  &kp MUTE  &kp VOL_DN &kp VOL_UP
             >;
         };
 

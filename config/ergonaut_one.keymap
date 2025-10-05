@@ -14,25 +14,32 @@
 
 // Макрос для NULL (приоритет 1, часто в запросах 1С)
 
-&macro_null { bindings = <
-        &text "NULL", &kp, SPC
-    >; };
+&macro_null {
+    bindings = <
+        &text, "NULL", &kp, , SPC
+    >;
+};
 
 // Макрос для <> (не равно, приоритет 1, авто-вставка пары)
 
-&macro_not_equal { bindings = <
-        &text, "<>", >; };
+&macro_not_equal {
+    bindings = <
+        &text, "<>", , >;
+};
 
 // Macro для Ё/Ё (hold E)
 
-&macro_e { bindings = <
-        &text, "Ё", >; };
+&macro_e {
+    bindings = <
+        &text, "Ё", , >;
+};
 
 &macro_e_upper {
     bindings =
         <
         &text,
         "Ё",
+        ,
         // Или "Ё" uppercase, еслaи нужно &kp LSHFT &text "Ё",
         >;
 };
@@ -40,7 +47,7 @@
 // Tap-dance для <>: tap <, double-tap <>, hold macro <>
 
 &td_lt {
-    tap-action = &kp, LT;
+    tap-action = &kp, , LT;
 
     taps = <2>;
     double-tap-action = &macro_not_equal;
@@ -74,10 +81,10 @@
         lower_layer {
             display-name = "SYM";
             bindings = <
-&mt LGUI F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6    &kp F7    &kp F8     &kp F9  &kp F10  &kp F11  &kp F12
-&mt LCTRL PLUS  &kp GRAVE  &kp LBKT  &kp RBKT  &kp LCBR   &kp RCBR  &kp DQUO  &kp TILDE  &trans  &trans   &trans   &trans
-&mt LALT EQUAL  &trans     &kp LT    &kp GT    &kp QMARK  &kp PIPE  &kp AMPS  &trans     &trans  &trans   &trans   &kp RALT
-                                     &trans    &trans     &trans    &trans    &trans     &trans
+&mt LGUI F1     &kp F2     &kp F3    &kp F4    &kp F5          &kp F6           &kp F7                 &kp F8     &kp F9  &kp F10  &kp F11  &kp F12
+&mt LCTRL PLUS  &kp GRAVE  &kp LBKT  &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LG(DOUBLE_QUOTES)  &kp TILDE  &trans  &trans   &trans   &trans
+&mt LALT EQUAL  &trans     &kp LT    &kp GT    &kp QMARK       &kp PIPE         &kp AMPS               &trans     &trans  &trans   &trans   &kp RALT
+                                     &trans    &trans          &trans           &trans                 &trans     &trans
             >;
         };
 
